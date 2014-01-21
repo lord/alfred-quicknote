@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>8F88C7AF-D6A3-4A5B-BFF7-F6E4ECA84A7B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9F070CEA-2BD2-4BD5-9043-F6B05DC89F3B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Robert Lord (@rlordio)</string>
+	<key>description</key>
+	<string>Type to search or create notes</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>QuickNote</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>keyword</key>
+				<string>note</string>
+				<key>runningsubtext</key>
+				<string>Loading notes...</string>
+				<key>script</key>
+				<string>ruby search.rb "{query}" ~/Dropbox/Notes</string>
+				<key>subtext</key>
+				<string>Search and Create Notes</string>
+				<key>title</key>
+				<string>QuickNote</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8F88C7AF-D6A3-4A5B-BFF7-F6E4ECA84A7B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>ruby run.rb "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9F070CEA-2BD2-4BD5-9043-F6B05DC89F3B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>8F88C7AF-D6A3-4A5B-BFF7-F6E4ECA84A7B</key>
+		<dict>
+			<key>ypos</key>
+			<real>210</real>
+		</dict>
+		<key>9F070CEA-2BD2-4BD5-9043-F6B05DC89F3B</key>
+		<dict>
+			<key>ypos</key>
+			<real>310</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://lord.io</string>
+</dict>
+</plist>
