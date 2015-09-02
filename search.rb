@@ -1,5 +1,7 @@
 require 'shellwords'
 
+Encoding.default_external = Encoding::UTF_8
+
 query = ARGV[0].strip
 search_path = ARGV[1]
 
